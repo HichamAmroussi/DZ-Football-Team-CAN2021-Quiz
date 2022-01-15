@@ -1,0 +1,287 @@
+/*Poppins Font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+/* Tajawal Arabic Font */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1440px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 1289px) {
+  html {
+    font-size: 82%;
+  }
+}
+
+@media (max-width: 460px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+/** Base styles **/
+
+body {
+  color: #fff;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 1.2rem;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.background {
+  background-color: rgba(15 ,15 ,15 ,1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.8s ease;
+  position: relative;
+}
+
+@media (max-width: 720px) {
+  .background {
+    background-position: 80% 0;
+  }
+}
+
+.background:before {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: inherit;
+  content: ' ';
+}
+
+.background .progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 100%;
+  width: 92vw;
+  margin-top: 3vh;
+}
+
+.bar {
+  background: rgba(30, 30, 30, 0.8);
+  border-radius: 5px;
+  height: 3px;
+  width: 9vw;
+}
+
+@media (max-width: 1550px) {
+  .background .progress-container {
+    width: 89vw;
+  }
+  .bar {
+    width: 8.7vw;
+  }
+}
+
+@media (max-width: 970px) {
+  .background .progress-container {
+    width: 86vw;
+  }
+  .bar {
+    width: 8.3vw;
+  }
+}
+
+@media (max-width: 720px) {
+  .background .progress-container {
+    width: 95vw;
+  }
+  .bar {
+    width: 8.9vw;
+  }
+}
+
+.active {
+  background: rgba(255, 255, 255);
+}
+
+.question-nums {
+  position: absolute;
+  top: 2.7vh;
+  left: 0.6vw;
+  background: rgba(30, 30, 30, 0.8);
+  color: white;
+  padding: 0.2rem 0.7rem;
+  border-radius: 3px;
+  font-family: calibri;
+  font-size: 1rem;
+}
+
+@media (max-width: 720px) {
+  .question-nums {
+    top: 4.7vh;
+    left: 1vw;
+  }
+}
+
+.background .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 50vw;
+  margin-bottom: 28vh;
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+
+@media (max-width: 970px) {
+  .background .container {
+    max-width: 80vw;
+  }
+}
+
+@media (max-width: 720px) {
+  .background .container {
+    max-width: 95vw;
+    margin-bottom: 28vh;
+  }
+}
+
+.container.transition {
+  opacity: 1;
+  transform: translateY(-10%);
+}
+
+.background .container h2 {
+  font-size: 2rem;
+  line-height: 1.6;
+  padding-bottom: 2.4rem;
+}
+
+@media (max-width: 720px) {
+  .background .container h2 {
+    line-height: 1.3;
+  }
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.label {
+  width: 250px;
+  background: none;
+  padding: 0.6rem 0;
+  margin-bottom: 1.4rem;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 2px solid #AB3127;
+  transition: all 0.5s ease;
+}
+
+.label:last-child {
+  margin-bottom: 0;
+}
+
+.label:hover {
+  background: #AB3127;
+}
+
+@media (max-width: 500px) {
+  .label {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    border: 2px solid #AB3127;
+  }
+  .label:hover {
+    background: none;
+  }
+}
+
+input:checked + label {
+  background-color: #AB3127;
+}
+
+
+/*Circular Progress Bar*/
+
+.wrapper {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  margin-bottom: 9vh;
+}
+
+.circular-progress {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #fff;
+}
+
+.value-container {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  color: #fff;
+}
+
+svg {
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+circle {
+  fill: none;
+  stroke: #AB3127;
+  stroke-width: 6px;
+  stroke-dasharray: 770;
+  stroke-dashoffset: 770;
+  animation: anim 2s linear forwards;
+}
+
+@keyframes anim {
+  100% {
+    stroke-dashoffset: var(--m, 0);
+  }
+}
+
+.score-text {
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.remarque {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+@media (max-width: 500px) {
+ .score-text {
+    font-size: 1.4rem;
+    padding: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .remarque {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+  }
+}

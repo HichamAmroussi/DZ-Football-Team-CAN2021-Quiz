@@ -158,6 +158,18 @@ body {
   }
 }
 
+@media (max-height: 900px) {
+  .background .container {
+    margin-bottom: 25vh;
+  }
+}
+
+@media (max-height: 800px) {
+  .background .container {
+    margin-bottom: 17vh;
+  }
+}
+
 .container.transition {
   opacity: 1;
   transform: translateY(-10%);

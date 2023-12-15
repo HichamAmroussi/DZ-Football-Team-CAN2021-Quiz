@@ -10,7 +10,7 @@ const quizData = [
     background: "https://i.imgur.com/kOTqrGR.jpeg"
   },
   {
-    question: "Qui est l'entraîneur qui a remporté la Coupe d'Afrique 1990 ?",
+    question: "Quel entraîneur a remporté la Coupe d'Afrique 1990 ?",
     a: "Smaïl Khabatou",
     b: "Abdelhamid Kermali",
     c: "Rabah Saâdane",
@@ -37,7 +37,7 @@ const quizData = [
     background: "https://i.imgur.com/3Za7p3L.jpeg"
   },
   {
-    question: "Quel est le meilleur buteur à la CAN dans l'histoire de l'Algérie ?",
+    question: "Qui est le meilleur buteur à la CAN dans l'histoire de l'Algérie ?",
     a: "Riyad Mahrez",
     b: "Sofiane Feghouli",
     c: "Islam Slimani",

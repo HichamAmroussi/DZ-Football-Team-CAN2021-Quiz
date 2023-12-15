@@ -283,6 +283,7 @@ circle {
 .remarque {
   font-size: 1.5rem;
   padding: 1rem;
+  text-align: center;
 }
 
 @media (max-width: 500px) {
@@ -294,6 +295,6 @@ circle {
 
   .remarque {
     font-size: 1.7rem;
-    padding: 1rem 0;
+    padding: 1rem 0.7rem;
   }
 }

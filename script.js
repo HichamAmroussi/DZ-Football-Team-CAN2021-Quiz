@@ -23,7 +23,7 @@ const quizData = [
     a: "ثمان مرات",
     b: "عشر مرات",
     c: "خمس عشرة مرة",
-    d: "ثماني عشرة مرة",
+    d: "تسعة عشر مرة",
     correct: "d",
     background: "https://media.thestar.com.my/Prod/44603895-4BFC-4361-B6DE-8BD48B493D8D"
   },

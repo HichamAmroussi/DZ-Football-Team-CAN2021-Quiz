@@ -139,7 +139,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  max-width: 50vw;
+  max-width: 40vw;
   margin-bottom: 28vh;
   opacity: 0;
   transition: all 1.5s ease;
@@ -177,7 +177,7 @@ body {
 
 .background .container h2 {
   font-size: 2rem;
-  line-height: 1.6;
+  line-height: 1.3;
   padding-bottom: 2.4rem;
 }
 

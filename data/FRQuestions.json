@@ -1,0 +1,100 @@
+{
+    "questions": [
+        {
+            "question": "Combien de titres de Coupe d'Afrique des Nations l'Algérie a-t-elle remportés ?",
+            "a": "Aucun",
+            "b": "Quatre titre",
+            "c": "Deux titre",
+            "d": "Un seul titre",
+            "correct": "c",
+            "background": "https://i.imgur.com/kOTqrGR.jpeg"
+        },
+        {
+            "question": "Quel entraîneur a remporté la Coupe d'Afrique 1990 ?",
+            "a": "Smaïl Khabatou",
+            "b": "Abdelhamid Kermali",
+            "c": "Rabah Saâdane",
+            "d": "Rachid Mekhloufi",
+            "correct": "b",
+            "background": "https://i.imgur.com/EAi2wuu.jpeg"
+        },
+        {
+            "question": "Combien de fois dans son histoire l’Algérie a-t-elle participé à la Coupe d’Afrique ?",
+            "a": "Huit fois",
+            "b": "Dix fois",
+            "c": "Quinze fois",
+            "d": "Dix neuf fois",
+            "correct": "d",
+            "background": "https://media.thestar.com.my/Prod/44603895-4BFC-4361-B6DE-8BD48B493D8D"
+        },
+        {
+            "question": "Quand a eu lieu la première participation à la Coupe d'Afrique ?",
+            "a": "1962",
+            "b": "1965",
+            "c": "1968",
+            "d": "1982",
+            "correct": "c",
+            "background": "https://i.imgur.com/3Za7p3L.jpeg"
+        },
+        {
+            "question": "Qui est le meilleur buteur à la CAN dans l'histoire de l'Algérie ?",
+            "a": "Riyad Mahrez",
+            "b": "Sofiane Feghouli",
+            "c": "Islam Slimani",
+            "d": "Rabah Madjer",
+            "correct": "a",
+            "background": "https://i.imgur.com/RtUXsbJ.jpeg"
+        },
+        {
+            "question": "Où s'est déroulée la première CAN remportée par l'équipe nationale algérienne ?",
+            "a": "Éthiopie",
+            "b": "Égypte",
+            "c": "Tunisie",
+            "d": "Algérie",
+            "correct": "d",
+            "background": "https://i.imgur.com/WSmU5C7.jpeg"
+        },
+        {
+            "question": "Contre qui Houcine Achiou a-t-il inscrit son but historique lors de la CAN 2004 organisée en Tunisie ?",
+            "a": "Maroc",
+            "b": "Tunisie",
+            "c": "Égypte",
+            "d": "Mali",
+            "correct": "c",
+            "background": "https://i.imgur.com/C3d9PMX.jpeg"
+            },
+        {
+            "question": "À quel tour l'Algérie a-t-elle été éliminé en 2004 ?",
+            "a": "Finale",
+            "b": "Quart de finale",
+            "c": "demi-finales",
+            "d": "Phase de groupes",
+            "correct": "b",
+            "background": "https://i.imgur.com/NgAqDWE.jpeg"
+            },
+        {
+            "question": "A quelle minute Bougherra a-t-il égalisé lors du quart de finale fou contre la Côte d'Ivoire en 2010 ?",
+            "a": "80ème minute",
+            "b": "70ème minute",
+            "c": "93ème minute",
+            "d": "91ème minute",
+            "correct": "d",
+            "background": "https://i.imgur.com/0PW0L39.jpg"
+        },
+        {
+            "question": "Quel joueur Algérien a remporté le titre de meilleur joueur de la CAN 2019",
+            "a": "Riyad Mahrez",
+            "b": "Ismaël Bennacer",
+            "c": "Youcef Belaïli",
+            "d": "Baghdad Bounedjah",
+            "correct": "b",
+            "background": "https://i.imgur.com/2Mjlw20.jpeg"
+        }
+    ],
+    "score": {
+        "high": "Score complet, Bravo à toi ! &#128079;",
+        "middle": "Très bon score, il te manque peu pour avoir un score complet. &#9917;",
+        "low": "Bien joué! mais je sais que tu peux mieux faire. &#9917;",
+        "veryLow": "Tu peux faire beaucoup mieux que ça! &#128064;"
+    }
+}

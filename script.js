@@ -21,6 +21,7 @@ let quizFilePath;
 let currentQuestion = 0;
 let score = 0;
 let currentActive = 1;
+let questionAnswerStatut = [];
 
 // Event Listeners
 languageBtns.forEach(button => button.addEventListener('click', loadQuiz));
@@ -120,9 +121,12 @@ async function setNextQuestion() {
   const answer = getSelected();
   
   if(answer === quizData.questions[currentQuestion].correct) {
-      score++;
+    score++;
+    questionAnswerStatut[currentQuestion] = true;
+  } else {
+    questionAnswerStatut[currentQuestion] = false;
   }
-  
+
   currentQuestion++;
   
   if(currentQuestion < quizData.questions.length) {
@@ -182,6 +186,19 @@ function displayScore(quizData) {
       <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="250px" height="250px">
         <circle cx="125" cy="125" r="123" stroke-linecap="round" />
       </svg>
+
+      <div class="bubble-container">
+        <div class="bubble ${questionAnswerStatut[0] ? "green" : "red"}"></div>
+        <div class="bubble ${questionAnswerStatut[1] ? "green" : "red"}"></div>
+        <div class="bubble ${questionAnswerStatut[2] ? "green" : "red"}"></div>
+        <div class="bubble ${questionAnswerStatut[3] ? "green" : "red"}"></div>
+        <div class="bubble ${questionAnswerStatut[4] ? "green" : "red"}"></div>
+        <div class="bubble ${questionAnswerStatut[5] ? "green" : "red"}"></div>
+        <div class="bubble ${questionAnswerStatut[6] ? "green" : "red"}"></div>
+        <div class="bubble ${questionAnswerStatut[7] ? "green" : "red"}"></div>
+        <div class="bubble ${questionAnswerStatut[8] ? "green" : "red"}"></div>
+        <div class="bubble ${questionAnswerStatut[9] ? "green" : "red"}"></div>
+      </div>
     </div>
   `
   document.querySelector('circle').style.setProperty('--m', 770 - (770 * (score * 0.1)));

@@ -347,8 +347,9 @@ circle {
 }
 @media (max-width: 700px) {
   .replay-btn {
+    font-size: 1.4rem;
     margin: 1.8rem 0;
-    margin-left: 76px;
+    margin-left: 72px;
     padding: 1rem 1.8rem;
   }
 }

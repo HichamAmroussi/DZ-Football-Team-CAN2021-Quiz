@@ -199,7 +199,15 @@ function displayScore(quizData) {
         <div class="bubble ${questionAnswerStatut[8] ? "green" : "red"}"></div>
         <div class="bubble ${questionAnswerStatut[9] ? "green" : "red"}"></div>
       </div>
+
+      ${quizLanguage === "FR" 
+        ? `<button class="replay-btn">Rejouer</button>`
+        : `<button class="replay-btn">العب من جديد</button>`
+      }
     </div>
   `
   document.querySelector('circle').style.setProperty('--m', 770 - (770 * (score * 0.1)));
+
+  const replayBtn = document.querySelector('.replay-btn');
+  replayBtn.addEventListener('click', () => location.reload());
 }
